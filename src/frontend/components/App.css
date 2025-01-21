@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-image: url("./images/sfondo.jpg");
+  background-size: cover; /* Fa sì che l'immagine copra l'intero schermo */
+  background-position: center; /* Posiziona l'immagine al centro della pagina */
+  background-repeat: no-repeat; /* Evita che l'immagine si ripeta */
+  height: 100vh; /* Imposta l'altezza al 100% della finestra */
+}
+
+.App-header {
+  background-color: palevioletred;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.toast-text-white {
+  color: white;
+}
+
+.container-fluid {
+  padding: 2rem 0;
+}
+
+.form-control,
+.btn {
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Transizione morbida */
+}
+
+.form-control:focus,
+.btn:hover {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); /* Leggera animazione */
+}
+
+.btn-primary {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.nav-link {
+  color: #000;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transizioni per colore e ingrandimento */
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #d5bdaf; /* Colore hover */
+  transform: scale(1.2);
+}
+
+button {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #e3d5ca;
+}
+
+.card {
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transizione per un effetto più fluido */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-custom {
+  height: 400px;
+}
+
+.card-img-top {
+  width: 100%; /* L'immagine occupa tutta la larghezza della card */
+  height: 250px; /* Imposta un'altezza fissa */
+  object-fit: cover; /* Adatta l'immagine alla dimensione senza distorsioni */
+}
+
+.card-custom .card-body {
+  height: 140px; /* Altezza fissa per il corpo della card */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Allinea il contenuto in modo uniforme */
+  overflow: hidden;
+}
