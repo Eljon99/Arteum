@@ -1,2 +1,2 @@
 # Arteum
- DApp che ovvre compra-vendita di NFT
+ DApp che offre compra-vendita di NFT
